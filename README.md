@@ -1259,7 +1259,6 @@ plt.show()
 
 
 ## Binary Classification Model
-* Model 3 was selected for its configuration, achieving an accuracy of 50.3% and an ROC AUC of 49.1%, indicating near-random performance. The model includes 87 coefficients, of which a subset is statistically significant with p-values below 0.05. Significant variables include interactions between occupation and country, such as C(Occupation)[T.IT]:C(Country)[T.Germany] (coefficient: -3.8900, p-value: 0.0297) and C(Occupation)[T.Engineering]:C(Country)[T.India] (coefficient: 3.4107, p-value: 0.0307). Physical and work activities also show significance, with Physical_Activity_Hours (coefficient: 38.5331, p-value: 0.0357) positively associated and various polynomial terms involving Work_Hours and Physical_Activity_Hours exhibiting mixed directions. Despite identifying statistically significant terms, the model’s overall predictive power remains limited, reflected by its accuracy and ROC AUC close to chance levels.
 
 
 ```python
@@ -2424,7 +2423,7 @@ cv_results.loc[(cv_results['from_set'] == 'testing') &
 
 
 ### Model Selection
-* 
+* Model 3 was selected for its configuration, achieving an accuracy of 50.3% and an ROC AUC of 49.1%, indicating near-random performance. The model includes 87 coefficients, of which a subset is statistically significant with p-values below 0.05. Significant variables include interactions between occupation and country, such as C(Occupation)[T.IT]:C(Country)[T.Germany] (coefficient: -3.8900, p-value: 0.0297) and C(Occupation)[T.Engineering]:C(Country)[T.India] (coefficient: 3.4107, p-value: 0.0307). Physical and work activities also show significance, with Physical_Activity_Hours (coefficient: 38.5331, p-value: 0.0357) positively associated and various polynomial terms involving Work_Hours and Physical_Activity_Hours exhibiting mixed directions. Despite identifying statistically significant terms, the model’s overall predictive power remains limited, reflected by its accuracy and ROC AUC close to chance levels.
 
 
 ```python
